@@ -1,0 +1,132 @@
+:root {
+  --color-red: #db0000;
+  --color-pink: #f5a9a9;
+  --color-blue: #1c4896;
+  --color-text: #333;
+  --color-bg: #f2f2f2;
+  --color-border: #ddd;
+  --color-button-border: #dadada;
+  --color-disabled: #ccc;
+  --color-disabled-border: #f1f1f1;
+  --color-red--75: #db000075;
+}
+#main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+  #main {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main {
+    padding: 0 15px;
+  }
+}
+#main > *:last-child {
+  margin-top: 78px;
+}
+#main .local_menu .top_title {
+  display: none;
+}
+#main .local_menu ul.depth1 {
+  max-width: 1000px;
+  margin: 78px auto 66px;
+  padding: 78px 25px 0;
+  border-top: 1px solid #e5e5e5;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px 0;
+}
+@media screen and (max-width: 767px) {
+  #main .local_menu ul.depth1 {
+    margin: 28px auto 30px;
+    padding: 28px 0 0;
+  }
+}
+#main .local_menu ul.depth1 li {
+  min-width: 230px;
+}
+@media screen and (max-width: 767px) {
+  #main .local_menu ul.depth1 li {
+    flex: 0 0 50%;
+    min-width: unset;
+    font-size: 13px;
+  }
+}
+#main .local_menu ul.depth1 li.lm42 {
+  display: none;
+}
+#main .local_menu ul.depth1 li a {
+  position: relative;
+  display: block;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  padding-left: 35px;
+}
+#main .local_menu ul.depth1 li a::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  vertical-align: -6px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  #main .local_menu ul.depth1 li a::before {
+    margin-right: 3px;
+  }
+}
+#main .local_menu ul.depth1 li a::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  left: 0;
+  top: 3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  mask: url("https://www.ishiikomuten.jp/media/images/templete/menu_arrow.svg") no-repeat center;
+  background-color: var(--color-red);
+}
+#main .local_menu ul.depth1 li a::after {
+  mask: none;
+  background: url(https://www.ishiikomuten.jp/media/images/templete/menu_arrow_red.svg) no-repeat center / 14px;
+}
+#main .block.table table a.detail_button {
+  display: block;
+  width: 180px;
+  border: 1px solid var(--color-base);
+  background: #fff url(https://www.ishiikomuten.jp/media/images/common/red-arrow.svg) no-repeat right 14px center;
+  padding: 10px 10px 11px;
+  margin: 10px 0;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-base);
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  transition: background 0.3s ease-in;
+}
+@media screen and (max-width: 767px) {
+  #main .block.table table a.detail_button {
+    width: 160px;
+    font-size: 13px;
+  }
+}
+#main .block.table table a.detail_button:hover {
+  background-position: right 10px center;
+}
+/*# sourceMappingURL=./company_info.css.map */
